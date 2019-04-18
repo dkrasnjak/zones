@@ -160,7 +160,11 @@ extendZone({
       if(ownerInfo) {
         zone.setOwnerArgs(validateArgs(this, arguments));
       }
-      return zone.run(func, this, arguments);
+
+      // don´t run if callback is a object
+      if (typeof func !== "object") {
+        return zone.run(func, this, arguments);
+      }
     };
   },
 

@@ -221,7 +221,8 @@ function apply() {
     'prompt'
   ]);
 
-  eventTargetPatch.apply();
+  // disabled becouse this let not apply event functions anymore (e.g. sortablejs)
+  // eventTargetPatch.apply();
 
   propertyDescriptorPatch.apply();
 
