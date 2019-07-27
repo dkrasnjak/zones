@@ -2,10 +2,10 @@ var fs = Npm.require('fs');
 var path = Npm.require('path');
 
 Package.describe({
-  name: 'akarda:zones',
+  name: 'dkrasnjak:zones',
   summary: 'Zone.Js integration for meteor',
-  version: "1.6.1",
-  git: "https://github.com/Akarda/zones"
+  version: "1.6.2",
+  git: "https://github.com/dkrasnjak/zones"
 });
 
 Package.on_use(function (api) {
