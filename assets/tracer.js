@@ -248,6 +248,6 @@ Stacktrace.prototype.get = function() {
 };
 
 Stacktrace.prototype.stackFramesFilter = function(line) {
-  var filterRegExp = /\/packages\/(akarda_zones|zones|local-test_akarda_zones)\/assets\/|^Error$/;
+  var filterRegExp = /\/packages\/(dkrasnjak_zones|zones|local-test_dkrasnjak_zones)\/assets\/|^Error$/;
   return !line.match(filterRegExp);
 };
